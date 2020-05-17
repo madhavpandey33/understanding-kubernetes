@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: nginx-backend-server-container
-          image: nginx:1.5-err
-  replicas: 3
+          image: nginx:1.12
+  replicas: 15
   selector:
     matchLabels:
       app: backend
