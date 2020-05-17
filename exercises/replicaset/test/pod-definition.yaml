@@ -1,0 +1,11 @@
+# this file is for testing label selector configured in ReplicaSet
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-pod
+  labels:
+    app: backend
+spec:
+  containers:
+    - name: nginx-backend-server-container
+      image: nginx
