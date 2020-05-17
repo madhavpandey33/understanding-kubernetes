@@ -2,7 +2,7 @@
 
 It's main purpose is to maintain a stable set of replica Pods running at any given time. 
 
-Some of the commands that are used here to create and explore PODS are:
+Some of the commands that are used here to create and explore ReplicaSet are:
 
 - Create ReplicaSet
 
@@ -15,13 +15,13 @@ kubectl create -f rc-definition.yaml
 kubectl get replicaset
 ```
 
-- Describe Pods
+- Describe ReplicaSet
 ```
 kubectl describe replicaset
 ```
 
 
-##Testing
+## Testing
 Make sure that ReplicaSet is running and configured properly.
 
 To test out if the ReplicaSet is working as expected, use the pod-definition file available [here](test/pod-definition.yaml) to create a pod with label `backend`.
